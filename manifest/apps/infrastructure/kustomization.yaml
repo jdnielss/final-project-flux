@@ -4,4 +4,6 @@ namespace: istio-system
 resources:
   - istio-gateway.yaml
   - virtual-service.yaml
-  - notification-controller.yaml
+  - imagepolicy.yaml
+  - imagerepository.yaml
+  - imageupdateautomation.yaml
