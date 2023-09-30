@@ -5,3 +5,6 @@ resources:
   - istio-gateway.yaml
   - virtual-service.yaml
   - imageautomation
+  - imagepolicy.yaml
+  - imagerepository.yaml
+  - imageupdateautomation.yaml
