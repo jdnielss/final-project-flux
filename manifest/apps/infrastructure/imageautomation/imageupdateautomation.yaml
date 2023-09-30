@@ -1,13 +1,12 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImageUpdateAutomation
 metadata:
-  name: golang-api-service
-  namespace: default
+  name: flux-system
 spec:
-  interval: 1m0s
+  interval: 1m
   sourceRef:
     kind: GitRepository
-    name: golang-api-service
+    name: flux-system
   git:
     checkout:
       ref:
@@ -16,7 +15,7 @@ spec:
       author:
         email: mail.jdnielss@gmail.com
         name: fluxcdbot
-      messageTemplate: "{{range .Updated.Images}}{{println .}}{{end}}"
+      messageTemplate: "Updated image: {{range .Updated.Images}}{{println .}}{{end}}"
     push:
       branch: master
   update:
