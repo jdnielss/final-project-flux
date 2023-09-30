@@ -5,4 +5,4 @@ metadata:
   namespace: default
 spec:
   image: docker.io/jdnielss/go-api-service
-  interval: 1m0s
+  interval: 10s
