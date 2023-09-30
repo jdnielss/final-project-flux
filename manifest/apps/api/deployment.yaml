@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: go-api
-          image: jdnielss/go-api-service:v1
+          image: jdnielss/go-api-service:${IMAGE_TAG}
           resources:
             limits:
               memory: "128Mi"
