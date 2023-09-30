@@ -4,8 +4,7 @@ metadata:
   name: istio-gateway
 spec:
   selector:
-    istio: ingress
-    app: istio-ingress
+    app: istio-ingressgateway
   servers:
     - port:
         number: 80
