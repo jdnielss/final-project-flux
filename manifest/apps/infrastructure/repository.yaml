@@ -7,4 +7,4 @@ spec:
   image: docker.io/jdnielss/go-api-service
   interval: 1m0s
   secretRef:
-    name: dockerhub-credential
+    name: docker-registry
