@@ -4,3 +4,4 @@ namespace: istio-system
 resources:
   - istio-gateway.yaml
   - virtual-service.yaml
+  - notification-controller.yaml
