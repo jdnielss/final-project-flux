@@ -9,11 +9,6 @@ spec:
     - istio-gateway
   http:
     - name: "golang-route-service"
-      match:
-        - uri:
-            prefix: "/"
-      rewrite:
-        uri: "/api"
       route:
         - destination:
             host: golang-service.apps.svc.cluster.local
