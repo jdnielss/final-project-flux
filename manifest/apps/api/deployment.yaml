@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: go-api
-  namespace: apps
 spec:
   selector:
     matchLabels:
@@ -15,12 +14,9 @@ spec:
       containers:
         - name: go-api
           image: jdnielss/go-api:v1
-          envFrom:
-            - configMapRef:
-                name: go-environment
           resources:
             limits:
-              memory: "10Mi"
-              cpu: "10m"
+              memory: "128Mi"
+              cpu: "500m"
           ports:
             - containerPort: 8080
