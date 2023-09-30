@@ -1,13 +1,13 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImageUpdateAutomation
 metadata:
-  name: go-api
+  name: golang-api-service
   namespace: default
 spec:
   interval: 1m0s
   sourceRef:
     kind: GitRepository
-    name: go-api
+    name: golang-api-service
   git:
     checkout:
       ref:
@@ -20,5 +20,5 @@ spec:
     push:
       branch: master
   update:
-    path: ./api/deployment.yaml
+    path: ./manifest/apps
     strategy: Setters

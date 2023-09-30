@@ -1,8 +1,8 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImageRepository
 metadata:
-  name: go-api
+  name: golang-api-service
   namespace: default
 spec:
-  image: docker.io/jdnielss/go-api-service
+  image: docker.io/jdnielss/golang-api-service
   interval: 1m0s
