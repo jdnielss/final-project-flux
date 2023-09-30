@@ -16,6 +16,6 @@ spec:
         uri: "/api"
       route:
         - destination:
-            host: golang-service.final-project.svc.cluster.local
+            host: golang-service.apps.svc.cluster.local
             port:
               number: 8080
