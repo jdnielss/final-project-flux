@@ -19,5 +19,5 @@ spec:
     push:
       branch: master
   update:
-    path: ./api
+    path: ./manifest/apps
     strategy: Setters
