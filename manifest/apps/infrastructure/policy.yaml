@@ -8,4 +8,4 @@ spec:
     name: go-api-service
   policy:
     semver:
-      range: ">1.0.0 <1.10"
+      range: ">1.0.0 <10.0.0"
