@@ -1,11 +1,11 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImagePolicy
 metadata:
-  name: go-api
+  name: go-api-service
   namespace: default
 spec:
   imageRepositoryRef:
-    name: go-api
+    name: go-api-service
   policy:
     semver:
       range: "*"

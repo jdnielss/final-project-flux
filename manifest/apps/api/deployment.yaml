@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: go-api
-          image: docker.io/jdnielss/golang-api-service:v1.0 # {"$imagepolicy": "flux-system:go-api-service"}
+          image: docker.io/jdnielss/go-api-service:v1.0 # {"$imagepolicy": "flux-system:go-api-service"}
           resources:
             limits:
               memory: "128Mi"
