@@ -4,4 +4,3 @@ namespace: apps
 
 resources:
   - api
-  - infrastructure
