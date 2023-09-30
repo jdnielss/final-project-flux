@@ -21,3 +21,5 @@ spec:
               cpu: "50m"
           ports:
             - containerPort: 8080
+      imagePullSecrets:
+        - name: dockerhub-credential
