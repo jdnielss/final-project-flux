@@ -6,5 +6,3 @@ metadata:
 spec:
   image: docker.io/jdnielss/go-api-service
   interval: 1m0s
-  secretRef:
-    name: docker-registry
