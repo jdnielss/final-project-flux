@@ -13,11 +13,11 @@ spec:
         branch: master
     commit:
       author:
-        email: mail.jdnielss@gmail.com
+        email: fluxcdbot@users.noreply.github.com
         name: fluxcdbot
       messageTemplate: "Updated image: {{range .Updated.Images}}{{println .}}{{end}}"
     push:
       branch: master
   update:
-    path: ./manifest/apps
+    path: ./manifest/apps/api/deployment.yaml
     strategy: Setters
