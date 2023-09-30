@@ -5,7 +5,7 @@ metadata:
   namespace: apps
 spec:
   selector:
-    app: go-api
+    app: go-api-service
   ports:
     - name: http
       port: 8080

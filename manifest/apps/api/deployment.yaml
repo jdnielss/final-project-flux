@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: go-api
+  name: go-api-service
   namespace: apps
 spec:
   selector:
     matchLabels:
-      app: go-api
+      app: go-api-service
   template:
     metadata:
       labels:
-        app: go-api
+        app: go-api-service
     spec:
       containers:
-        - name: go-api
+        - name: go-api-service
           image: docker.io/jdnielss/go-api-service:v1.5 # {"$imagepolicy": "flux-system:go-api-service"}
           resources:
             limits:
