@@ -19,5 +19,5 @@ spec:
     push:
       branch: master
   update:
-    path: ./manifest/apps/api/deployment.yaml
+    path: ./manifest/apps/
     strategy: Setters
