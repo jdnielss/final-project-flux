@@ -11,6 +11,6 @@ spec:
     - name: "golang-route-service"
       route:
         - destination:
-            host: golang-service.apps.svc.cluster.local
+            host: go-api-service.apps.svc.cluster.local
             port:
               number: 8080
