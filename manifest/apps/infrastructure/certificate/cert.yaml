@@ -10,6 +10,6 @@ spec:
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: api.jdnielss.my.id
+  commonName: "*.jdnielss.my.id"
   dnsNames:
-    - api.jdnielss.my.id
+    - "*.jdnielss.my.id"
