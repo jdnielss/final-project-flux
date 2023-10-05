@@ -1,7 +1,7 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: url-1-certs
+  name: url-2-certs
   namespace: istio-system
   annotations:
     cert-manager.io/issue-temporary-certificate: "true"
@@ -10,7 +10,22 @@ spec:
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: "*.jdnielss.my.id"
+  commonName: "api.jdnielss.my.id"
+  dnsNames:
+    - api.jdnielss.my.id
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: url-2-certs
+  namespace: istio-system
+  annotations:
+    cert-manager.io/issue-temporary-certificate: "true"
+spec:
+  secretName: url-2-certs
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: "www.jdnielss.my.id"
   dnsNames:
     - www.jdnielss.my.id
-    - api.jdnielss.my.id
