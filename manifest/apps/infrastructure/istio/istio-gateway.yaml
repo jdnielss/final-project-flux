@@ -17,8 +17,8 @@ spec:
         name: https-url-1
         protocol: HTTPS
       tls:
-        # mode: SIMPLE
-        # credentialName: "url-1-certs" # This should match the Certificate secretName
+        mode: SIMPLE
+        credentialName: "url-1-certs" # This should match the Certificate secretName
         httpsRedirect: true
       hosts:
         - "api.jdnielss.my.id"
