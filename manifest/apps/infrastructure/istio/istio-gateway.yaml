@@ -11,13 +11,13 @@ spec:
         name: http
         protocol: HTTP
       hosts:
-        - api.jdnielss.my.id
-    - port:
-        number: 443
-        name: https-url-1
-        protocol: HTTPS
-      tls:
-        mode: SIMPLE
-        credentialName: "url-1-certs" # This should match the Certificate secretName
-      hosts:
-        - "api.jdnielss.my.id"
+        - "*.jdnielss.my.id"
+    # - port:
+    #     number: 443
+    #     name: https-url-1
+    #     protocol: HTTPS
+    #   tls:
+    #     mode: SIMPLE
+    #     credentialName: "url-1-certs" # This should match the Certificate secretName
+    #   hosts:
+    #     - "api.jdnielss.my.id"
