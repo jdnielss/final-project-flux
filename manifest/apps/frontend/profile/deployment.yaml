@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: profile-kube
+  namespace: apps
+spec:
+  selector:
+    matchLabels:
+      app: profile-kube
+  template:
+    metadata:
+      labels:
+        app: profile-kube
+    spec:
+      containers:
+        - name: profile-kube
+          image: docker.io/jdnielss/profile-kube:1.0 # {"$imagepolicy": "flux-system:profile-kube"}
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "50m"
+          ports:
+            - containerPort: 80

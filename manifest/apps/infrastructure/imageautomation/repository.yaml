@@ -6,3 +6,12 @@ metadata:
 spec:
   image: docker.io/jdnielss/go-api-service
   interval: 10s
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: profile-kube
+  namespace: flux-system
+spec:
+  image: docker.io/jdnielss/profile-kube
+  interval: 10s
