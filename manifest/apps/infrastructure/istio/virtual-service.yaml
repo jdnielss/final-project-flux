@@ -25,7 +25,9 @@ spec:
   gateways:
     - istio-gateway
   http:
-    - name: "frontend-route"
+    - match:
+        - uri:
+            prefix: "/"
       route:
         - destination:
             host: profile-kube.apps.svc.cluster.local

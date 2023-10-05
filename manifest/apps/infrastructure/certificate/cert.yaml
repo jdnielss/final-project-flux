@@ -12,4 +12,5 @@ spec:
     kind: ClusterIssuer
   commonName: "*.jdnielss.my.id"
   dnsNames:
-    - "*.jdnielss.my.id"
+    - www.jdnielss.my.id
+    - api.jdnielss.my.id
