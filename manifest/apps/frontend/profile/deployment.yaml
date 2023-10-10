@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: profile-kube
-          image: docker.io/jdnielss/profile-kube:1.1.15 # {"$imagepolicy": "flux-system:profile-kube"}
+          image: docker.io/jdnielss/profile-kube:1.1.27 # {"$imagepolicy": "flux-system:profile-kube"}
           resources:
             limits:
               memory: "128Mi"
